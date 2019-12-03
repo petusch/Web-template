@@ -2,10 +2,15 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Flat UI Login Form</title>
+  <title>Login Form</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="../style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script>
+    function foo() {
+      location.replace("http://localhost:63342/web1/main%20table/Oh%20crap2.html");
+      return true;
+    }
+  </script>
 
 </head>
 <body>
@@ -23,51 +28,13 @@
           <input type="password" placeholder="Password" />
         </li>
         <li>
-          <input type="submit" value="Login" class="button" />
+          <input  value="Login" class="button" onclick="return foo();"/>
         </li>
       </ul>
     </form>
   </div>
-  <!--/#login.form-action-->
-  <div id="register" class="form-action hide">
-    <h1>Register</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, culpa repudiandae.</p>
-    <form>
-      <ul>
-        <li>
-          <input type="text" placeholder="Username" />
-        </li>
-        <li>
-          <input type="password" placeholder="Password" />
-        </li>
-        <li>
-          <input type="submit" value="Sign Up" class="button" />
-        </li>
-      </ul>
-    </form>
-  </div>
-  <!--/#register.form-action-->
-  <div id="reset" class="form-action hide">
-    <h1>Reset Password</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, provident in accusamus possimus.</p>
-    <form>
-      <ul>
-        <li>
-          <input type="text" placeholder="Email" />
-        </li>
-        <li>
-          <input type="text" placeholder="Birthday" />
-        </li>
-        <li>
-          <input type="submit" value="Send" class="button" />
-        </li>
-      </ul>
-    </form>
-  </div>
-  <!--/#register.form-action-->
+
 </div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="script.js"></script>
 
 </body>
 </html>
